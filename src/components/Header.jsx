@@ -1,47 +1,43 @@
-// import React from 'react'
+import React from 'react';
+import '../App.css'; // Adjust the path as necessary
 
-// const Header = () => {
-//   return (
-//     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-//       <div className="container">
-//         <a className="navbar-brand fw-bold text-primary fs-3" href="#">
-//           SEYON
-//         </a>
+const Header = () => {
+  return (
+     <nav className="navbar custom-navbar fixed-top shadow-sm bg-white">
+      <div className="container-fluid d-flex align-items-center justify-content-between px-4">
         
-//         <button 
-//           className="navbar-toggler" 
-//           type="button" 
-//           data-bs-toggle="collapse" 
-//           data-bs-target="#navbarNav"
-//         >
-//           <span className="navbar-toggler-icon"></span>
-//         </button>
-        
-//         <div className="collapse navbar-collapse" id="navbarNav">
-//           <ul className="navbar-nav ms-auto">
-//             <li className="nav-item">
-//               <a className="nav-link" href="#home">Home</a>
-//             </li>
-//             <li className="nav-item">
-//               <a className="nav-link" href="#services">Services</a>
-//             </li>
-//             <li className="nav-item">
-//               <a className="nav-link" href="#about">About</a>
-//             </li>
-//             <li className="nav-item">
-//               <a className="nav-link" href="#contact">Contact</a>
-//             </li>
-//            <li className="nav-item">
-//   <a className="nav-button" href="#get-started">
-//     Get Started
-//   </a>
-// </li>
+        {/* Left: Logo */}
+        <div className="navbar-left">
+          <a className="navbar-brand fw-bold royal-green-text fs-3" href="#home">
+            Seyon <span className="tech-text">Tech</span>
+          </a>
+        </div>
 
-//           </ul>
-//         </div>
-//       </div>
-//     </nav>
-//   )
-// }
+        {/* Center: Navigation */}
+        <div className="navbar-center d-none d-lg-flex">
+          <ul className="navbar-nav flex-row justify-content-center w-100">
+            <li className="nav-item px-3">
+              <a className="nav-link royal-green-text" href="#home">Home</a>
+            </li>
+            <li className="nav-item px-3">
+              <a className="nav-link royal-green-text" href="#services">Services</a>
+            </li>
+            <li className="nav-item px-3">
+              <a className="nav-link royal-green-text" href="#about">About</a>
+            </li>
+            <li className="nav-item px-3">
+              <a className="nav-link royal-green-text" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-// export default Header
+        {/* Right: Get Started Button */}
+        <div className="navbar-right d-none d-lg-flex">
+          <a className="btn btn-get-started" href="#get-started">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Header;

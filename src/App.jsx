@@ -6,9 +6,11 @@ import AdditionalServices from './pages/AdditionalServicesAdditionalServices'
 import WhyChooseSection from './pages/WhyChooseSection '
 import HerosSection from './pages/HerosSection'
 import FounderSection from './pages/FounderSection'
+import Header from './components/Header'
 function App() {
   return (
     <div className="App">
+      <Header />
       <HerosSection/>
       <Services/>
       <AdditionalServices/>

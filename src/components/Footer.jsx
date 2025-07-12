@@ -11,7 +11,7 @@ const Footer = () => {
               Result-driven digital marketing agency helping brands grow with strategy, creativity & technology.
             </p>
           </div>
-          
+
           <div className="col-lg-2 col-md-6 mb-4">
             <h6 className="fw-bold mb-3">Services</h6>
             <ul className="list-unstyled">
@@ -21,7 +21,7 @@ const Footer = () => {
               <li><a href="#" className="text-muted text-decoration-none">Web Development</a></li>
             </ul>
           </div>
-          
+
           <div className="col-lg-2 col-md-6 mb-4">
             <h6 className="fw-bold mb-3">Company</h6>
             <ul className="list-unstyled">
@@ -31,7 +31,7 @@ const Footer = () => {
               <li><a href="#" className="text-muted text-decoration-none">Careers</a></li>
             </ul>
           </div>
-          
+
           <div className="col-lg-4 mb-4">
             <h6 className="fw-bold mb-3">Contact</h6>
             <div className="contact-info">
@@ -47,9 +47,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         <hr className="my-4" />
-        
+
         <div className="row align-items-center">
           <div className="col-md-12 text-center">
             <p className="text-muted mb-0">

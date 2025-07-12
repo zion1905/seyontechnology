@@ -8,7 +8,7 @@
 
 .navbar-brand {
   font-size: 1.8rem;
-  color: #1e3a8a;
+  color:  #00452d !important;
   font-weight: 700;
   text-decoration: none;
   display:flex;
@@ -26,7 +26,7 @@
 }
 
 .nav-cta {
-  background-color: #1e3a8a;
+  background-color: #00452d !important;
   color: #fff;
   padding: 10px 20px;
   border-radius: 25px;
@@ -186,24 +186,24 @@ footer a:hover {
 .tab-button {
   padding: 10px 16px;
   border-radius: 999px;
-  border: 2px solid #1e3a8a;
+  border: 2px solid #00452d !important;
   background-color: white;
-  color: #1e3a8a;
+  color: #00452d !important;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .tab-button.active {
-  background-color: #1e3a8a;
-  color: white;
+  background-color:  #00452d !important;
+  color: white !important;
 }
 
 .services-title {
   text-align: center;
   font-size: 2.5rem;
-  margin: 30px 0 20px;
-  color: #0d47a1;
+  padding-top: 100px;
+  color:  #00452d !important;
   font-weight: bold;
 }
 
@@ -228,8 +228,8 @@ footer a:hover {
 
 .tab-button.active,
 .tab-button:hover {
-  background-color: #0d47a1;
-  color: #fff;
+  background-color: #00452d !important;
+  color: #fff !important;
 }
 
 .card-grid {
@@ -270,12 +270,13 @@ footer a:hover {
 
 .course-category {
   font-size:1.5rem;
-  color: #2196f3;
-  font-weight: 500;
+  color: #00452d !important;
+  font-weight: bolder;
 }
 
 .course-title {
   font-size: 1rem;
+  color: #0a7c54 !important;
   font-weight: bold;
   margin: 8px 0;
 }
@@ -304,11 +305,11 @@ footer a:hover {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #1e3a8a;
+  color:  #00452d !important;
 }
 
 .section-title .highlight {
-  color: #3b82f6;
+  color: #00452d !important;
 }
 
 .section-subtitle {
@@ -323,6 +324,7 @@ footer a:hover {
   gap: 30px;
   width: 100%;
   justify-items: center;
+  margin-bottom: 100px;
 }
 
 .service-card:nth-child(1) {
@@ -356,6 +358,13 @@ footer a:hover {
   }
 }
 
+.custom-dark-green {
+  color: #00452d !important;
+}
+
+.custom-dark{
+   color: #0a7c54 !important;
+}
 
 .service-card {
   background-color: #f8fafc;
@@ -376,13 +385,14 @@ footer a:hover {
 .service-icon {
   font-size: 3rem; /* Increased size */
   margin-bottom: 20px;
-  color: #1e3a8a;
+  color:  #00452d !important;
 }
 
 .service-title {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #1e3a8a;
+
+  color:  #00452d !important;
 }
 
 /* Optional animations */
@@ -443,8 +453,8 @@ footer a:hover {
 }
 
 .category-badge {
-  background-color: #e3f2fd;
-  color: #1976d2;
+  background-color:    #f8f9ff !important;
+  color:  #00452d !important;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 14px;
@@ -452,7 +462,7 @@ footer a:hover {
 }
 
 .date-text {
-  color: #1976d2;
+  color: #00452d !important;
   font-size: 14px;
   font-weight: 500;
 }
@@ -493,18 +503,144 @@ footer a:hover {
     font-size: 14px;
   }
 }
+
+
 .hero-container {
-  background: linear-gradient(135deg, #007bff, #00c6ff);
+  position: relative;
+  background: url('https://www.shutterstock.com/image-illustration/glow-light-data-digital-marketing-260nw-1919367578.jpg')
+    center center / cover no-repeat;
   color: white;
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  animation: fadeIn 1.5s ease-in;
-  border-radius: 0 0 40px 40px;
+  overflow: hidden;
+  /* border-radius: 0 0 40px 40px; */
+  animation: fadeSlideUp 1.2s ease-in-out;
+  z-index: 1;
 }
+
+/* Gradient overlay */
+.hero-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(0, 70, 110, 0.75));
+  z-index: -1;
+}
+
+/* Content block */
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+.cta-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #00b894;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #019174;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #00b894;
+  color: #00b894;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-outline:hover {
+  background-color: #00b894;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Highlight word */
+.highlight {
+  color: #00b894;
+  font-weight: bold;
+}
+
+/* Entrance animation */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .hero-content {
+    padding: 30px 15px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* .hero-container {
+  position: relative;
+  background: url('https://www.shutterstock.com/image-illustration/glow-light-data-digital-marketing-260nw-1919367578.jpg') center center / cover no-repeat;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0 0 40px 40px;
+  animation: fadeSlideUp 1.2s ease-in-out;
+  z-index: 1;
+} */
+
+/* Dark + gradient overlay for contrast and glow */
+/* .hero-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 70, 110, 0.7));
+  z-index: 0;
+}
+
 
 .hero-content h1 {
   font-size: 2.8rem;
@@ -561,9 +697,9 @@ footer a:hover {
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(30px); }
   100% { opacity: 1; transform: translateY(0); }
-}
+} */
 .founder-wrapper {
-  background: linear-gradient(to right, #f9fbff, #e0f0ff);
+  /* background: linear-gradient(to right, #f9fbff, #e0f0ff); */
   padding: 80px 20px;
   display: flex;
   justify-content: center;
@@ -587,6 +723,9 @@ footer a:hover {
   min-width: 280px;
   max-width: 400px;
   overflow: hidden;
+}
+.founder-highlight{
+  color: #00452d !important;
 }
 
 .founder-img {
@@ -612,12 +751,12 @@ footer a:hover {
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #1a1a2e;
+  color: #00b894;
 }
 
-.founder-title span {
+/* .founder-title span {
   color: #007bff;
-}
+} */
 
 .founder-name {
   font-size: 1.6rem;
@@ -627,7 +766,7 @@ footer a:hover {
 }
 
 .founder-role {
-  color: #5e17eb;
+  color:  #00b894;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -662,3 +801,4 @@ footer a:hover {
     font-size: 1.8rem;
   }
 }
+

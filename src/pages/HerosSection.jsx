@@ -1,43 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css'
 
 const HerosSection = () => {
   return (
-    <header className="hero-section">
-      {/* Sticky & Stylish Navbar */}
-      <nav className="navbar navbar-expand-lg fixed-top custom-navbar">
-        <div className="container">
-          <a className="navbar-brand d-flex align-items-center" href="#">
-            <span>🚀 <strong>Seyon Technology</strong></span>
-          </a>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto align-items-center gap-lg-4 gap-2">
-              <li className="nav-item">
-                <a className="nav-link" href="#services">Services</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#about">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#contact">Contact</a>
-              </li>
-              <li className="nav-item">
-                <a className="btn nav-cta" href="#get-started">Get Started</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <div className="hero-section">
+    
 
       {/* Hero Content */}
       <div className="container text-center hero-content">
@@ -76,7 +44,7 @@ const HerosSection = () => {
           </div>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

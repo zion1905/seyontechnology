@@ -11,7 +11,7 @@ const FounderSection = () => {
 
         <div className="founder-text">
           <h2 className="founder-title">
-            Meet Our <span>Founder</span>
+            Meet Our <span className='founder-highlight'>Founder</span>
           </h2>
           <h3 className="founder-name">Mr. SEYON</h3>
           <p className="founder-role">👨‍🏫 Founder, Digital Marketing Specialist & Trainer</p>
