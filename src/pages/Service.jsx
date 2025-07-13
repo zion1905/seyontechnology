@@ -104,7 +104,6 @@ const Services = () => {
 
   return (
 
-    
     <div id='services'>
     <div className="courses-container" id='social'>
       {/* Section Title */}
