@@ -15,17 +15,17 @@ const Footer = () => {
           <div className="col-lg-2 col-md-6 mb-4">
             <h6 className="fw-bold mb-3">Services</h6>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-muted text-decoration-none">Social Media Marketing</a></li>
-              <li><a href="#" className="text-muted text-decoration-none">SEO Optimization</a></li>
-              <li><a href="#" className="text-muted text-decoration-none">Google Ads</a></li>
-              <li><a href="#" className="text-muted text-decoration-none">Web Development</a></li>
+              <li><a href="#social" className="text-muted text-decoration-none">Social Media Marketing</a></li>
+              <li><a href="#social" className="text-muted text-decoration-none">SEO Optimization</a></li>
+              <li><a href="#social" className="text-muted text-decoration-none">Google Ads</a></li>
+              <li><a href="#social" className="text-muted text-decoration-none">Web Development</a></li>
             </ul>
           </div>
 
           <div className="col-lg-2 col-md-6 mb-4">
             <h6 className="fw-bold mb-3">Company</h6>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-muted text-decoration-none">About Us</a></li>
+              <li><a href="#about us" className="text-muted text-decoration-none">About Us</a></li>
               <li><a href="#" className="text-muted text-decoration-none">Case Studies</a></li>
               <li><a href="#" className="text-muted text-decoration-none">Blog</a></li>
               <li><a href="#" className="text-muted text-decoration-none">Careers</a></li>

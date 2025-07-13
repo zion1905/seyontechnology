@@ -29,7 +29,7 @@ const WhyChooseSection = () => {
 
   return (
     <div id="about">
-    <section className="why-choose-section py-5">
+    <section className="why-choose-section py-5" id="about us">
       <div className="container">
         <div className="row">
           <div className="col-12 text-center mb-5">
