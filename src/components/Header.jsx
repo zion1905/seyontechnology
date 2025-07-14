@@ -1,42 +1,87 @@
-import React from 'react';
-import '../App.css'; // Adjust the path as necessary
+import React, { useState } from 'react';
+import '../App.css'; // Make sure styles are added there
+
 
 const Header = () => {
-  return (
-     <nav className="navbar custom-navbar fixed-top shadow-sm bg-white">
-      <div className="container-fluid d-flex align-items-center justify-content-between px-4">
-        
-        {/* Left: Logo */}
-        <div className="navbar-left">
-          <a className="navbar-brand fw-bold royal-green-text fs-3" href="#home">
-            Seyon <span className="tech-text">Tech</span>
-          </a>
-        </div>
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-        {/* Center: Navigation */}
-        <div className="navbar-center d-none d-lg-flex">
-          <ul className="navbar-nav flex-row justify-content-center w-100">
-            <li className="nav-item px-3">
-              <a className="nav-link royal-green-text" href="#home">Home</a>
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  return (
+    <>
+      <nav className="navbar custom-navbar fixed-top shadow-sm bg-white">
+        <div className="container-fluid d-flex align-items-center justify-content-between px-4">
+          
+          {/* Left: Logo */}
+          <div className="navbar-left">
+            <a className="navbar-brand fw-bold royal-green-text fs-3" href="#home">
+              Seyon <span className="tech-text">Tech</span>
+            </a>
+          </div>
+
+          {/* Center: Desktop Menu */}
+          <div className="navbar-center d-none d-lg-flex">
+            <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+/>
+            <ul className="navbar-nav flex-row justify-content-center w-100">
+              <li className="nav-item px-3">
+                <a className="nav-link royal-green-text" href="#home">Home</a>
+              </li>
+              <li className="nav-item px-3">
+                <a className="nav-link royal-green-text" href="#services">Services</a>
+              </li>
+              <li className="nav-item px-3">
+                <a className="nav-link royal-green-text" href="#about">About</a>
+              </li>
+              <li className="nav-item px-3">
+                <a className="nav-link royal-green-text" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Right: Desktop Get Started */}
+          <div className="navbar-right d-none d-lg-flex">
+            <a className="btn btn-get-started" href="#get-started">Get Started</a>
+          </div>
+
+          {/* Right: Hamburger Toggle (Mobile Only) */}
+          <button
+            className="d-lg-none border-0 bg-transparent"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle Mobile Menu"
+          >
+            <i className={`bi ${isMobileMenuOpen ? 'bi-x-lg' : 'bi-list'} fs-2 royal-green-text`}></i>
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="mobile-menu d-lg-none bg-white shadow-sm p-3">
+          <ul className="navbar-nav text-center">
+            <li className="nav-item py-2">
+              <a className="nav-link royal-green-text" href="#home" onClick={toggleMobileMenu}>Home</a>
             </li>
-            <li className="nav-item px-3">
-              <a className="nav-link royal-green-text" href="#services">Services</a>
+            <li className="nav-item py-2">
+              <a className="nav-link royal-green-text" href="#services" onClick={toggleMobileMenu}>Services</a>
             </li>
-            <li className="nav-item px-3">
-              <a className="nav-link royal-green-text" href="#about">About</a>
+            <li className="nav-item py-2">
+              <a className="nav-link royal-green-text" href="#about" onClick={toggleMobileMenu}>About</a>
             </li>
-            <li className="nav-item px-3">
-              <a className="nav-link royal-green-text" href="#contact">Contact</a>
+            <li className="nav-item py-2">
+              <a className="nav-link royal-green-text" href="#contact" onClick={toggleMobileMenu}>Contact</a>
+            </li>
+            <li className="nav-item py-2">
+              <a className="btn btn-get-started w-100" href="#get-started" onClick={toggleMobileMenu}>Get Started</a>
             </li>
           </ul>
         </div>
-
-        {/* Right: Get Started Button */}
-        <div className="navbar-right d-none d-lg-flex">
-          <a className="btn btn-get-started" href="#get-started">Get Started</a>
-        </div>
-      </div>
-    </nav>
+      )}
+    </>
   );
 };
 
