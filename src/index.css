@@ -671,3 +671,136 @@ footer a:hover {
   }
 }
 
+/* Client Section Styles */
+.client-section {
+  /* background-color: #f8f9fa; */
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.client-section h2 {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.client-section p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+/* Scrolling Container */
+.scrolling-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.scrolling-content {
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+  width: calc(200px * 36); /* 18 images × 2 sets × 200px width */
+}
+
+/* Continuous scroll animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 18)); /* Move by width of first set */
+  }
+}
+
+/* Client Item Styles */
+.client-item {
+  flex-shrink: 0;
+  width: 200px;
+  height: 120px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.client-para, .text-color{
+  color: #00452d;
+}
+.client-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.client-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.client-item:hover .client-image {
+  transform: scale(1.05);
+}
+
+/* Pause animation on hover (optional) */
+.scrolling-wrapper:hover .scrolling-content {
+  animation-play-state: running; /* Keep running even on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .client-section {
+    padding: 60px 0;
+  }
+  
+  .client-item {
+    width: 150px;
+    height: 100px;
+    margin: 0 15px;
+  }
+  
+  .scrolling-content {
+    width: calc(150px * 36);
+    animation: scroll-left-mobile 25s linear infinite;
+  }
+  
+  @keyframes scroll-left-mobile {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-150px * 18));
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .client-item {
+    width: 120px;
+    height: 80px;
+    margin: 0 10px;
+  }
+  
+  .scrolling-content {
+    width: calc(120px * 36);
+    animation: scroll-left-small 20s linear infinite;
+  }
+  
+  @keyframes scroll-left-small {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-120px * 18));
+    }
+  }
+}

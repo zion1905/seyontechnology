@@ -7,6 +7,7 @@ import WhyChooseSection from './pages/WhyChooseSection '
 import HerosSection from './pages/HerosSection'
 import FounderSection from './pages/FounderSection'
 import Header from './components/Header'
+import ClientSection from './pages/ClientSection'
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
       <Services/>
       <AdditionalServices/>
       <WhyChooseSection/>
+      <ClientSection/>
       <FounderSection/>
       <HeroSection />
       <Footer />
