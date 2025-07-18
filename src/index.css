@@ -85,7 +85,6 @@
  
 .gradient-text {
   background: linear-gradient(90deg,  rgb(29, 96, 172),  #3779c4); /* Purple gradient */
-  -webkit-background-clip: text;
   font-size: 4rem;
   -webkit-text-fill-color: transparent;
 }
