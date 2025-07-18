@@ -84,10 +84,15 @@
 }
  
 .gradient-text {
-  background: linear-gradient(90deg,  rgb(29, 96, 172),  #3779c4); /* Purple gradient */
   font-size: 4rem;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, rgb(29, 96, 172), #3779c4);
+  background-clip: text;
+  -webkit-background-clip: text; /* for Safari/Chrome */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Safari only */
+  display: inline-block;
 }
+
 .text-dark{
     font-size: 4rem;
 }
