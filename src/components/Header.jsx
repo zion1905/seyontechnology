@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css'; // Make sure styles are added there
-
+import logo from '../assets/SeyonLogo.png'
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,9 +16,12 @@ const Header = () => {
           
           {/* Left: Logo */}
           <div className="navbar-left">
-            <a className="navbar-brand fw-bold royal-green-text fs-3" href="#home">
-              Seyon <span className="tech-text">Tech</span>
-            </a>
+               <a className="navbar-brand" href="#">
+      <img
+        src={logo}
+        alt="Seyon Tech Logo"
+      />
+    </a>
           </div>
 
           {/* Center: Desktop Menu */}
@@ -29,16 +32,16 @@ const Header = () => {
 />
             <ul className="navbar-nav flex-row justify-content-center w-100">
               <li className="nav-item px-3">
-                <a className="nav-link royal-green-text" href="#home">Home</a>
+                <a className="nav-link" href="#home">Home</a>
               </li>
               <li className="nav-item px-3">
-                <a className="nav-link royal-green-text" href="#services">Services</a>
+                <a className="nav-link" href="#services">Services</a>
               </li>
               <li className="nav-item px-3">
-                <a className="nav-link royal-green-text" href="#about">About</a>
+                <a className="nav-link" href="#about">About</a>
               </li>
               <li className="nav-item px-3">
-                <a className="nav-link royal-green-text" href="#contact">Contact</a>
+                <a className="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>

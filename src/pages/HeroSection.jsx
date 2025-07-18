@@ -1,4 +1,3 @@
-
 const HeroSection = () => {
   return (
     <div id='contact'>
@@ -11,8 +10,8 @@ const HeroSection = () => {
           Let's discuss your goals and create a custom digital marketing strategy that delivers real results.
         </p>
         <div className="cta-buttons">
-          <button className="btn-primary">Get Free Consultation →</button>
-          <button className="btn-outline">View Case Studies</button>
+          <button className="btn-free">Get Free Consultation →</button>
+          <button className="btn-view-case">View Case Studies</button>
         </div>
       </div>
     </div>

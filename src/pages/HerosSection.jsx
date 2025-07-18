@@ -1,48 +1,51 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../App.css'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import "../styles/HerosSection.css"
 
 const HerosSection = () => {
   return (
-    <div className="hero-section">
-    
-
-      {/* Hero Content */}
-      <div className="container text-center hero-content">
-        <h1 className="hero-title">
-          <span className="highlight">Result-Driven</span><br />
-          Digital Marketing Agency
+    <div className="hero-section text-center py-5">
+      <div className="container-hero-content">
+        <h1 className="hero-title fw-bold mb-3">
+          <span className="gradient-text">Result-Driven</span><br />
+          <span className="text-dark">Digital Marketing Agency</span>
         </h1>
-        <p className="hero-subtitle">
-          Helping brands grow with strategy, creativity & technology.
+
+        <p className="hero-subtitle text-secondary fs-2 mb-2">
+          Helping brands grow with strategy, creativity &amp; technology.
         </p>
-        <p className="hero-tagline">
+        <p className="hero-tagline text-primary fw-large mb-4">
           Serving businesses locally and globally.
         </p>
 
-        <div className="cta-buttons">
-          <a className="btn btn-lg btn-light cta-btn-primary" href="#start">Start Your Growth Journey</a>
-          <a className="btn btn-lg btn-outline-light cta-btn-secondary" href="#work">View Our Work</a>
+        <div className="d-flex justify-content-center gap-3 mb-5 flex-wrap">
+          <a className="btn btn-lg cta-btn-primary px-4" href="#start">
+            Start Your Growth Journey &rarr;
+          </a>
+          <a className="btn btn-lg cta-btn-secondary px-4" href="#work">
+            View Our Work
+          </a>
         </div>
 
-        <div className="row stats-row">
-          <div className="col-6 col-md-3">
-            <h5>500+</h5>
-            <p>Happy Clients</p>
+        {/* Stats */}
+        {/* <div className="row justify-content-center mt-5">
+          <div className="col-6 col-sm-3 mb-3">
+            <h3 className="text-primary fw-bold">500+</h3>
+            <p className="text-muted">Happy Clients</p>
           </div>
-          <div className="col-6 col-md-3">
-            <h5>1000+</h5>
-            <p>Projects Completed</p>
+          <div className="col-6 col-sm-3 mb-3">
+            <h3 className="text-primary fw-bold">1000+</h3>
+            <p className="text-muted">Projects Completed</p>
           </div>
-          <div className="col-6 col-md-3">
-            <h5>98%</h5>
-            <p>Client Satisfaction</p>
+          <div className="col-6 col-sm-3 mb-3">
+            <h3 className="text-primary fw-bold">98%</h3>
+            <p className="text-muted">Client Satisfaction</p>
           </div>
-          <div className="col-6 col-md-3">
-            <h5>24/7</h5>
-            <p>Support Available</p>
+          <div className="col-6 col-sm-3 mb-3">
+            <h3 className="text-primary fw-bold">24/7</h3>
+            <p className="text-muted">Support Available</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

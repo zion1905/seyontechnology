@@ -33,7 +33,7 @@ const WhyChooseSection = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 text-center mb-5">
-            <h2 className="display-6 fw-bold custom-dark-green mb-4">Why Choose SEYON TECHNOLOGY?</h2>
+            <h2 className="title">Why Choose SEYON TECHNOLOGY?</h2>
           </div>
         </div>
         
@@ -56,7 +56,7 @@ const WhyChooseSection = () => {
                   <h5 className="display-7 fw-bold custom-dark-green mb-4">
                     {feature.title}
                   </h5>
-                  <p className="display-9  custom-dark mb-4">
+                  <p className="display-9  custom-dark mb-4  description " >
                     {feature.description}
                   </p>
                 </div>

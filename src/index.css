@@ -1,11 +1,18 @@
-/* Hero Section Styling */
-.hero-section {
-  background: linear-gradient(135deg, #007bff, #00c6ff);
-  color: white;
-  padding-top: 120px;
-  padding-bottom: 80px;
-  border-radius: 0 0 40px 40px;
-  animation: fadeIn 1.2s ease;
+
+.custom-navbar {
+  background-color: #ffffff;
+  padding: 8px 20px; /* reduced padding */
+  height: auto;
+  min-height: 60px;  /* control minimum height */
+  display: flex;
+  align-items: center; /* vertical centering */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  height: 25px;  /* reduce logo height */
+  object-fit: contain;
 }
 
 .hero-content {
@@ -13,36 +20,7 @@
   margin: 0 auto;
 }
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
 
-.hero-title .highlight {
-  color: #ffdf00;
-  margin:30px;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #e0f0ff;
-}
-
-.hero-tagline {
-  font-size: 1rem;
-  margin-bottom: 30px;
-  color: #bbdefb;
-}
-
-.cta-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin-bottom: 40px;
-}
 
 .cta-btn-primary {
   background-color: #ffffff;
@@ -95,24 +73,164 @@
   }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.2rem;
+.hero-section {
+  background-color: #f5f8ff; /* Light soft blue */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.container-hero-content {
+ padding-top: 100px !important; /* Adjusted for better visibility */
+  text-align: center;
+}
+ 
+.gradient-text {
+  background: linear-gradient(90deg,  rgb(29, 96, 172),  #3779c4); /* Purple gradient */
+  -webkit-background-clip: text;
+  font-size: 4rem;
+  -webkit-text-fill-color: transparent;
+}
+.text-dark{
+    font-size: 4rem;
+}
+
+.cta-btn-primary {
+  background-color: #1d60ac;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cta-btn-primary:hover {
+  background-color:white ;
+  color:  #1d60ac;
+   border: 2px solid #1d60ac;
+  box-shadow: 0 6px 16px rgba(108, 99, 255, 0.5);
+}
+
+.cta-btn-secondary {
+  border: 2px solid #1d60ac;
+  color: #1d60ac;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.cta-btn-secondary:hover {
+  background-color: #1d60ac;
+  color: white;
+}
+.hero-container {
+  position: relative;
+  background: url('https://www.sonicseo.com/wp-content/uploads/2020/01/GettyImages-1150198297-1.jpg')
+    center center / cover no-repeat;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  /* border-radius: 0 0 40px 40px; */
+  animation: fadeSlideUp 1.2s ease-in-out;
+  z-index: 1;
+}
+
+/* Gradient overlay */
+.hero-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(0, 70, 110, 0.75));
+  z-index: -1;
+}
+
+/* Content block */
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+.cta-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-free {
+  background-color: #1d60ac;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-free:hover {
+  background-color: white;
+  border: #0077ff 1px solid;
+  color: #1d60ac;
+  transform: translateY(-2px);
+}
+
+.btn-view-case {
+  background-color: transparent;
+  border: 2px solid #0077ff;
+  color: #0077ff;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-view-case:hover {
+  background-color: #0077ff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Highlight word */
+.highlight {
+  color:#0077ff;
+  font-weight: bold;
+}
+
+/* Entrance animation */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
-
-  .cta-buttons {
-    flex-direction: column;
-  }
-
-
-
-  .hero-section {
-    padding-top: 140px;
-    padding-bottom: 60px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+/* Responsive */
+@media (max-width: 576px) {
+  .hero-content {
+    padding: 30px 15px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 /* Footer Styles */
 footer a:hover {
@@ -138,16 +256,16 @@ footer a:hover {
 .tab-button {
   padding: 10px 16px;
   border-radius: 999px;
-  border: 2px solid #00452d !important;
+  border: 2px solid #1d60ac !important;
   background-color: white;
-  color: #00452d !important;
+  color: #1d60ac !important;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .tab-button.active {
-  background-color:  #00452d !important;
+  background-color:  #1d60ac !important;
   color: white !important;
 }
 
@@ -155,7 +273,7 @@ footer a:hover {
   text-align: center;
   font-size: 2.5rem;
   padding-top: 100px;
-  color:  #00452d !important;
+  color:  rgb(23,97,170) !important;
   font-weight: bold;
 }
 
@@ -180,7 +298,7 @@ footer a:hover {
 
 .tab-button.active,
 .tab-button:hover {
-  background-color: #00452d !important;
+  background-color: #1d60ac !important;
   color: #fff !important;
 }
 
@@ -222,13 +340,13 @@ footer a:hover {
 
 .course-category {
   font-size:1.5rem;
-  color: #00452d !important;
+  color: #1d60ac !important;
   font-weight: bolder;
 }
 
 .course-title {
   font-size: 1rem;
-  color: #0a7c54 !important;
+  color: rgb(29,96,172) !important;
   font-weight: bold;
   margin: 8px 0;
 }
@@ -257,18 +375,22 @@ footer a:hover {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color:  #00452d !important;
+  color:  rgb(23,97,170) !important;
 }
 
-.section-title .highlight {
-  color: #00452d !important;
-}
 
+.title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:  rgb(23,97,170) !important;
+}
 .section-subtitle {
   font-size: 1.1rem;
   color: #4b5563;
   margin-bottom: 40px;
   max-width: 600px;
+  font-weight: bold;
 }
 .service-grid {
   display: grid;
@@ -311,11 +433,11 @@ footer a:hover {
 }
 
 .custom-dark-green {
-  color: #00452d !important;
+  color: #1d60ac !important;
 }
 
 .custom-dark{
-   color: #0a7c54 !important;
+   color: rgb(29,96,172) !important;
 }
 
 .service-card {
@@ -337,14 +459,14 @@ footer a:hover {
 .service-icon {
   font-size: 3rem; /* Increased size */
   margin-bottom: 20px;
-  color:  #00452d !important;
+  color:  #1d60ac !important;
 }
 
 .service-title {
   font-size: 1.1rem;
   font-weight: 500;
 
-  color:  #00452d !important;
+  color:  #1d60ac !important;
 }
 
 /* Optional animations */
@@ -406,17 +528,21 @@ footer a:hover {
 
 .category-badge {
   background-color:    #f8f9ff !important;
-  color:  #00452d !important;
+  color:  #6c757d !important;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
 }
+.description{
+    color:  #6c757d !important;
+    font-weight: bold;
 
+}
 .date-text {
-  color: #00452d !important;
+  color:#6c757d  !important;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .card-title {
@@ -459,8 +585,7 @@ footer a:hover {
 
 .hero-container {
   position: relative;
-  background: url('https://www.shutterstock.com/image-illustration/glow-light-data-digital-marketing-260nw-1919367578.jpg')
-    center center / cover no-repeat;
+
   color: white;
   padding: 120px 20px;
   text-align: center;
@@ -536,11 +661,7 @@ footer a:hover {
   transform: translateY(-2px);
 }
 
-/* Highlight word */
-.highlight {
-  color: #00b894;
-  font-weight: bold;
-}
+
 
 /* Entrance animation */
 @keyframes fadeSlideUp {
@@ -594,7 +715,7 @@ footer a:hover {
   overflow: hidden;
 }
 .founder-highlight{
-  color: #00452d !important;
+  color: #1d60ac !important;
 }
 
 .founder-img {
@@ -620,7 +741,7 @@ footer a:hover {
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #00b894;
+  color: #1d60ac;
 }
 
 /* .founder-title span {
@@ -629,13 +750,13 @@ footer a:hover {
 
 .founder-name {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: bold;
   margin: 10px 0;
-  color: #0a0a23;
+  color: #4b5563;
 }
 
 .founder-role {
-  color:  #00b894;
+  color:  #1d60ac;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -695,7 +816,7 @@ footer a:hover {
   position: relative;
   background: white;
   padding: 40px 0;
-  margin-top: 40px;
+  margin-top: -40px;
 }
 
 .scrolling-content {
@@ -731,8 +852,14 @@ footer a:hover {
   overflow: hidden;
 }
 
-.client-para, .text-color{
-  color: #00452d;
+ .text-color{
+ font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:  rgb(23,97,170) !important;
+}
+.client-para{
+  font-weight: bold;
 }
 .client-item:hover {
   transform: translateY(-5px);
