@@ -32,7 +32,7 @@ const Header = () => {
 />
             <ul className="navbar-nav flex-row justify-content-center w-100">
               <li className="nav-item px-3">
-                <a className="nav-link" href="#home">Home</a>
+                <a className="nav-link" href="#">Home</a>
               </li>
               <li className="nav-item px-3">
                 <a className="nav-link" href="#services">Services</a>
