@@ -1,7 +1,3 @@
-import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import "../styles/HerosSection.css"
-
 const HerosSection = () => {
   return (
     <div className="hero-section text-center py-5">
@@ -28,7 +24,7 @@ const HerosSection = () => {
         </div>
 
         {/* Stats */}
-        {/* <div className="row justify-content-center mt-5">
+        { <div className="row justify-content-center mt-5">
           <div className="col-6 col-sm-3 mb-3">
             <h3 className="text-primary fw-bold">500+</h3>
             <p className="text-muted">Happy Clients</p>
@@ -45,7 +41,7 @@ const HerosSection = () => {
             <h3 className="text-primary fw-bold">24/7</h3>
             <p className="text-muted">Support Available</p>
           </div>
-        </div> */}
+        </div> }
       </div>
     </div>
   );
