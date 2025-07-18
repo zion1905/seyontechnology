@@ -242,7 +242,8 @@ footer a:hover {
   transition: color 0.3s ease;
 }
 .text-muted{
-  color: #f8f9ff !important;
+  color: #555 !important;
+  font-weight: bold;
 }
 
 

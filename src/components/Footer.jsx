@@ -15,7 +15,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/share/1HguFTRy7G/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-facebook fs-4 text-light"></i>
               </a>
-              <a href="https://wa.me/8870214412" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+918870214412" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-whatsapp fs-4 text-light"></i>
               </a>
               <a href="https://www.instagram.com/seyontechnology?igsh=Z3AzdHk0a2ZtMGNy" target="_blank" rel="noopener noreferrer">
