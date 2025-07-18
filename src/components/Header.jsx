@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css'; // Make sure styles are added there
-import logo from '../assets/SeyonLogo.png'
+import logo from '../assets/seyonLogo.png';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
