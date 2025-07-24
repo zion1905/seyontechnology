@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="navbar custom-navbar fixed-top shadow-sm bg-white">
+      <nav className="navbar custom-navbar">
         <div className="container-fluid d-flex align-items-center justify-content-between px-4">
           
           {/* Left: Logo */}

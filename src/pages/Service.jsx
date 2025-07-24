@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-// import 'bootstrap-icons/font/bootstrap-icons.css'; // Make sure this is imported
+import {React,useState} from "react";
 
 const serviceSection = {
   "Social Media Marketing": [
@@ -9,7 +8,7 @@ const serviceSection = {
       title: "Platform management: Instagram, Facebook, YouTube, LinkedIn.",
       lessons: '⭐Content creation: Reels, posts, stories, videos',
       students: '⭐Ad campaigns to boost brand visibility & engagement',
-      url: "https://pngimg.com/d/share_PNG31.png",
+      url: "https://www.big-red-digital.com/images/blogimages/social-media-networks.jpg",
       instructor: "⭐Audience targeting, retargeting, and lead generation",
     },
     {
@@ -18,7 +17,7 @@ const serviceSection = {
       category: "Search Engine Optimization (SEO)",
       lessons: '⭐Keyword research, content optimization, and link building',
       students: '⭐Local SEO for location-based businesses (Google My Business)',
-      url: "https://cdn-icons-png.flaticon.com/512/3500/3500833.png",
+      url: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=512&q=60",
       instructor: "⭐Ashton McBride",
     },
   ],
@@ -29,7 +28,7 @@ const serviceSection = {
       category: "Google Ads (PPC)",
       lessons: '⭐ROI-focused campaigns for traffic, leads & sales',
       students: '⭐Keyword targeting, A/B testing, and analytics tracking',
-      url: "https://cdn-icons-png.flaticon.com/512/1161/1161807.png",
+      url: "https://masterwebwork.com/wp-content/uploads/2023/06/google-ads.jpg",
       instructor: "⭐Budget optimization for small & large businesses",
     },
     {
@@ -38,7 +37,7 @@ const serviceSection = {
       category: "Meta Ads (Facebook & Instagram)",
       lessons: '⭐Conversion-focused ads: lead gen, traffic, brand awareness',
       students: '⭐Visual ad design, copywriting, and analytics',
-      url: "https://cdn-icons-png.flaticon.com/512/1055/1055687.png",
+      url: "https://www.smartsites.com/media/facebook-instagram.jpg",
       instructor: "⭐Integration with landing pages and WhatsApp/CRM",
     },
   ],
@@ -49,7 +48,7 @@ const serviceSection = {
       category: "Website Design & Development",
       lessons: '⭐Landing pages for campaigns & lead funnels',
       students: '⭐E-commerce websites with payment gateway integration',
-      url: "https://cdn-icons-png.flaticon.com/512/2721/2721283.png",
+      url: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=512&q=60",
       instructor: "⭐Speed-optimized, secure, and user-friendly designs",
     },
     {
@@ -58,7 +57,7 @@ const serviceSection = {
       category: "Content Marketing",
       lessons: '⭐Brand storytelling to build authority & trust',
       students: '⭐Monthly content calendars and campaign themes',
-      url: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      url: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=512&q=60",
       instructor: "⭐Long-form and short-form content creation",
     },
   ],
@@ -68,7 +67,7 @@ const serviceSection = {
       title: "Collaboration with niche influencers across Instagram & YouTube.",
       category: "Influencer Marketing",
       lessons: '⭐Campaign planning, negotiation & reporting',
-      url: "https://media.istockphoto.com/id/1026485104/vector/community-network-and-social-icon.jpg?s=612x612&w=0&k=20&c=Kb_X-ZvcQYDmOtzoKtUDpIszcUWpLyDihCKzXJ1Hy-U=",
+      url: "https://www.socialpilot.co/wp-content/uploads/2024/02/Influencer-Marketing-Statistics.jpg",
       instructor: "⭐Micro and macro influencer tie-ups for better engagement",
     },
     {
@@ -76,11 +75,13 @@ const serviceSection = {
       title: "Logo design, brand kits, brochures, pitch decks.",
       category: "Branding & Design",
       lessons: '⭐Ad creatives, social media posts, and video edits',
-      url: "https://cdn-icons-png.flaticon.com/512/1034/1034131.png",
+      url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=512&q=60",
       instructor: "⭐Consistent visual identity across digital platforms",
     },
   ],
 };
+
+
 
 const ServiceCard = ({ service }) => (
   <div className="course-card">

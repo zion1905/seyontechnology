@@ -8,6 +8,9 @@ import HerosSection from './pages/HerosSection'
 import FounderSection from './pages/FounderSection'
 import Header from './components/Header'
 import ClientSection from './pages/ClientSection'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 function App() {
   return (
     <div className="App">
