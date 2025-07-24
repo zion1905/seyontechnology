@@ -1,5 +1,5 @@
 import React from 'react';
-import founderImage from '../assets/founder.jpg'; // Adjust your path
+import founderImage from '../assets/founder.png'; // Adjust your path
 
 const FounderSection = () => {
   return (
