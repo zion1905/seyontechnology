@@ -15,9 +15,8 @@ const Footer = () => {
               <a href="https://www.facebook.com/share/1HguFTRy7G/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-facebook fs-4 text-light"></i>
               </a>
-              <a href="https://wa.me/+918870214412" target="_blank" rel="noopener noreferrer">
-                <i className="bi bi-whatsapp fs-4 text-light"></i>
-              </a>
+           
+
               <a href="https://www.instagram.com/seyontechnology?igsh=Z3AzdHk0a2ZtMGNy" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-instagram fs-4 text-light"></i>
               </a>
@@ -62,10 +61,23 @@ const Footer = () => {
               <p className="text-muted mb-2">
                 <strong>Address:</strong> Park Circle, No. 20, Moores Road, Egmore, Chennai, Tamil Nadu 600006
               </p>
+              
             </div>
           </div>
         </div>
+        <div className='image'>
+    <a
+  href="https://wa.me/+918870214412"
+  target="_blank"
+  rel="noopener noreferrer"
 
+>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+    alt="WhatsApp"
+  />
+</a>
+</div>
         <hr className="my-4" />
 
         <div className="row">

@@ -27,7 +27,7 @@ const HerosSection = () => {
         </div>
 
         {/* Slide 2 */}
-        <div className="carousel-item hero-slide" style={{ backgroundImage: "url('https://www.springboard.com/blog/wp-content/uploads/2022/03/how-to-become-a-digital-marketing-manager-2022-guide.png')" }}>
+        <div className="carousel-item active hero-slide" style={{ backgroundImage: "url('https://www.springboard.com/blog/wp-content/uploads/2022/03/how-to-become-a-digital-marketing-manager-2022-guide.png')" }}>
           <div className="overlay d-flex flex-column justify-content-center align-items-center text-center text-white">
             <h1 className="display-4 fw-bold">
               <span className="highlight-text">Result-Driven</span><br />
@@ -45,7 +45,7 @@ const HerosSection = () => {
         </div>
 
         {/* Slide 3 */}
-        <div className="carousel-item hero-slide" style={{ backgroundImage: "url('https://fpb-system.com/wp-content/uploads/2023/01/Job-In-Digital-Marketing.jpg')" }}>
+        <div className="carousel-item active hero-slide" style={{ backgroundImage: "url('https://talent500.com/blog/wp-content/uploads/sites/42/2023/09/gd_1200.webp')" }}>
           <div className="overlay d-flex flex-column justify-content-center align-items-center text-center text-white">
             <h1 className="display-4 fw-bold">
               <span className="highlight-text">Result-Driven</span><br />
@@ -65,11 +65,9 @@ const HerosSection = () => {
 
       {/* Controls */}
       <button className="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Previous</span>
       </button>
       <button className="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
     </div>

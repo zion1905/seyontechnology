@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css'; // Make sure styles are added there
 import logo from '../assets/seyonLogo.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,26 +12,27 @@ const Header = () => {
 
   return (
     <>
+    <div id='navigation'>
       <nav className="navbar custom-navbar">
         <div className="container-fluid d-flex align-items-center justify-content-between px-4">
-          
+
           {/* Left: Logo */}
           <div className="navbar-left">
-               <a className="navbar-brand" href="#">
-      <img
-        src={logo}
-        alt="Seyon Tech Logo"
-      />
-    </a>
+            <a className="navbar-brand" href="#">
+              <img
+                src={logo}
+                alt="Seyon Tech Logo"
+              />
+            </a>
           </div>
 
           {/* Center: Desktop Menu */}
           <div className="navbar-center d-none d-lg-flex">
             <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-/>
-            <ul className="navbar-nav flex-row justify-content-center w-100">
+              rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+            />
+            <ul className="navbar-nav flex-row justify-content-space-between w-100 ">
               <li className="nav-item px-3">
                 <a className="nav-link" href="#">Home</a>
               </li>
@@ -48,7 +50,8 @@ const Header = () => {
 
           {/* Right: Desktop Get Started */}
           <div className="navbar-right d-none d-lg-flex">
-            <a className="btn btn-get-started" href="#get-started">Get Started</a>
+            <Link to="/business-form" className="btn btn-get-started">Get Started</Link>
+
           </div>
 
           {/* Right: Hamburger Toggle (Mobile Only) */}
@@ -84,6 +87,7 @@ const Header = () => {
           </ul>
         </div>
       )}
+      </div>
     </>
   );
 };

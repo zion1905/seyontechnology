@@ -16,11 +16,13 @@
 
 .tech-text {
   color: #0d47a1;
+  font-size: 20px;
 }
 
 /* Logo Left */
 .navbar-left {
   flex: 1;
+  width: 100%;
 }
 
 /* Center nav spaced evenly */
@@ -63,11 +65,14 @@
   transition: color 0.2s ease;
   color:rgb(23,97,170) !important;
   font-weight: bold;
+  font-size: 20px;
 }
-
-/* .navbar-nav .nav-link:hover {
-  color: #00452d !important;
-} */
+img{
+  height: 100%;
+}
+.navbar-nav .nav-link:hover {
+  color: #007bff !important;
+}
 
 /* Responsive: Show only logo and button, hide nav links */
 @media (max-width: 991px) {

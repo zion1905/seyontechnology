@@ -7,7 +7,7 @@ const WhyChooseSection = () => {
       description: "Track record of delivering measurable growth and ROI for our clients across all industries.",
       image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=400",
       category: "Results",
-      date: "16 Jun, 2022"
+      date: "16 May, 2023"
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ const WhyChooseSection = () => {
       description: "Certified professionals with years of experience in digital marketing and cutting-edge strategies.",
       image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400",
       category: "Team",
-      date: "14 Jun, 2022"
+      date: "14 Jun, 2024"
     },
     {
       id: 3,
@@ -23,7 +23,7 @@ const WhyChooseSection = () => {
       description: "Quick turnaround times without compromising quality. We get your campaigns live fast.",
       image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400",
       category: "Speed",
-      date: "12 Jun, 2022"
+      date: "21 July, 2024"
     }
   ]
 
