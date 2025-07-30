@@ -75,13 +75,13 @@ const HerosSection = () => {
   <div className="row justify-content-center g-4 text-center">
     <div className="col-6 col-md-3">
       <div className="stat-box">
-        <h3 className="stat-number">500+</h3>
+        <h3 className="stat-number">516+</h3>
         <p className="stat-label">Happy Clients</p>
       </div>
     </div>
     <div className="col-6 col-md-3">
       <div className="stat-box">
-        <h3 className="stat-number">1000+</h3>
+        <h3 className="stat-number">1056+</h3>
         <p className="stat-label">Projects Completed</p>
       </div>
     </div>
