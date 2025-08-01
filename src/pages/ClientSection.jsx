@@ -9,7 +9,6 @@ import client7 from '../assets/client7.jpeg';
 import client8 from '../assets/client8.jpeg';
 import client9 from '../assets/client9.jpeg';
 import client10 from '../assets/client10.jpeg';
-import client11 from '../assets/client11.jpeg';
 import client12 from '../assets/client12.jpeg';
 import client13 from '../assets/client13.jpeg';
 import client14 from '../assets/client14.jpeg';
@@ -23,7 +22,7 @@ const ClientSection = () => {
     // 18 client logos/images
     const clientImages = [
         client1, client2, client3, client4, client5,
-        client6, client7, client8, client9, client10,client11,client12,client13,client14,client15,client16,
+        client6, client7, client8, client9, client10,client12,client13,client14,client15,client16,
         client17,client18,
     ];
 
